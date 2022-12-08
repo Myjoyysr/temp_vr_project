@@ -12,9 +12,6 @@ public class TiltVisionWithJoystick : MonoBehaviour
     public float sensitivityX = 0.1F;
 	public float sensitivityY = 0.1F;
 
-	public float minimumX = -90F;
-	public float maximumX = 90F;
-
 	public float minimumY = -60F;
 	public float maximumY = 60F;
 
