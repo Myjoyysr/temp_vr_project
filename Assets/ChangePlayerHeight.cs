@@ -4,16 +4,17 @@ using UnityEngine;
 using UnityEngine.XR;
 using UnityEngine.XR.Interaction.Toolkit;
 
-public class ChangeIPDValue : MonoBehaviour
+public class ChangePlayerHeight : MonoBehaviour
 {
+
     public XRNode inputSource;
     private Vector2 inputAxis;
 
-    public float sensitivityX = 0.1F;
-    public float minimumX = -0.5F;
-    public float maximumX = 2.5F;
+    public float sensitivityY = 0.1F;
+    public float minimumY = 0F;
+    public float maximumY = 10F;
 
-    private float ipdChange = 1F;
+    private float heightChange = 0F;
 
     // Start is called before the first frame update
     void Start()
@@ -21,17 +22,16 @@ public class ChangeIPDValue : MonoBehaviour
         
     }
 
-
     // Update is called once per frame
     void Update()
     {
         InputDevice device = InputDevices.GetDeviceAtXRNode(inputSource);
         device.TryGetFeatureValue(CommonUsages.primary2DAxis, out inputAxis);
 
-        ipdChange += inputAxis.x * sensitivityX;
-        ipdChange = Mathf.Clamp (ipdChange, minimumX, maximumX);
+        heightChange += inputAxis.y * sensitivityY;
+        heightChange = Mathf.Clamp (heightChange, minimumY, maximumY);
 
-		transform.localScale = new Vector3(ipdChange, 1, 1);
+		transform.localPosition = new Vector3(0, heightChange, 0);
 
     }
 }
