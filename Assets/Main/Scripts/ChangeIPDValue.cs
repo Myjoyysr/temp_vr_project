@@ -10,12 +10,10 @@ public class ChangeIPDValue : MonoBehaviour
     private Vector2 inputAxis;
 
     public float sensitivityX = 0.1F;
+    public float minimumX = -0.5F;
+    public float maximumX = 2.5F;
 
     private float ipdChange = 1F;
-
-    private float minimumX = 0.5F;
-    private float maximumX = 1.5F;
-
 
     // Start is called before the first frame update
     void Start()
