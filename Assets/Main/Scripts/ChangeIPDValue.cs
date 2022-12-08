@@ -33,7 +33,7 @@ public class ChangeIPDValue : MonoBehaviour
         ipdChange += inputAxis.x * sensitivityX;
         ipdChange = Mathf.Clamp (ipdChange, minimumX, maximumX);
 
-		transform.localScale = new Vector3(ipdChange, 1, ipdChange);
+		transform.localScale = new Vector3(ipdChange, 1, 1);
 
     }
 }
