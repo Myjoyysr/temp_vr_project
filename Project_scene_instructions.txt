@@ -1,0 +1,59 @@
+Käyttö ohjeet jokaiseen sceneen
+
+Scene 1
+ 
+Right eye view controlling
+
+controlling instructions:
+ - Right hand joystic you can rotate right eye view angles all arround
+ - Right hand trigger button you can teleport inside of scene 
+ - there is teleport stand where you enter to main manu back.
+
+Scene 2
+
+Inverted vision
+
+Controlling instruction:
+ - Right hand joustic you can invert 
+ - there is teleport stand where you enter to main manu back.
+
+Scene 3
+
+IPD 
+
+controlling instruction:
+ - Right hand joystic you can change IPD
+ - Right hand trigger button you can teleport inside of scene 
+ - there is teleport stand where you enter to main manu back
+
+Scene 4
+
+Viewing height
+ 
+controlling instruction:
+ - Right hand joystic you can change viewing height
+ - Right hand trigger button you can teleport inside of scene 
+ - there is teleport stand where you enter to main manu back
+
+Scene 5
+
+take your eys on hand
+
+controlling instruction:
+ - Right hand controller you gpab your eye to right hand by take right hand controlle close to your head
+ - Right hand joystic you can teleport inside scene.
+ - Right hand trigger button you can shoot the targets.
+ - there is teleport stand where you enter to main manu back
+
+
+
+
+
+
+
+
+
+
+
+
+
