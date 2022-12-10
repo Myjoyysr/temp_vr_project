@@ -9,6 +9,8 @@ TagManager:
   - Box3
   - Box4
   - Box5
+  - HeadCollider
+  - ControllerCollider
   layers:
   - Default
   - TransparentFX
