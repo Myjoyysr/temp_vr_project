@@ -13,13 +13,13 @@ public class ControlVisionWithController : MonoBehaviour
 
     void Start()
     {
-        onController = false;
+        onController = true;
     }
 
     void Update()
     {
         if(onController == true){
-            rotation = new Vector3(controller.transform.eulerAngles.x, controller.transform.eulerAngles.x, controller.transform.eulerAngles.z);
+            rotation = new Vector3(controller.transform.eulerAngles.x, controller.transform.eulerAngles.y, controller.transform.eulerAngles.z);
             cam.transform.eulerAngles = rotation;
             cam.transform.position = controller.transform.position;
         }
