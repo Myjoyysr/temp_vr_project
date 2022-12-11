@@ -8,20 +8,19 @@ using UnityEngine.SpatialTracking;
 public class MoveWithHandTwo : MonoBehaviour
 {
     public XRNode control;
-    public Camera mainCamera;
+    public GameObject raycast;
     public GameObject hand;
     public TrackedPoseDriver driver;
 
+
     private Vector3 inputAxis;
-    private Vector3 cameraPosition;
-    private Vector3 cameraRotation;
     private Vector3 rotation;
     private bool trigger;
 
     // Start is called before the first frame update
     void Start()
     {
-        driver.enabled = true;
+    
     }
 
     // Update is called once per frame
@@ -37,10 +36,8 @@ public class MoveWithHandTwo : MonoBehaviour
             inputAxis = hand.transform.position;
             rotation = hand.transform.eulerAngles;
 
-            cameraPosition = mainCamera.transform.localPosition;
-            cameraRotation = mainCamera.transform.eulerAngles;
-
             driver.enabled = false;
+            raycast.SetActive(false);
 
             transform.eulerAngles = new Vector3(rotation.x, rotation.y, rotation.z);
             transform.position = new Vector3(inputAxis.x, inputAxis.y, inputAxis.z);
@@ -50,6 +47,7 @@ public class MoveWithHandTwo : MonoBehaviour
             transform.localPosition = new Vector3(0f, 0f, 0f);
             transform.localRotation = Quaternion.Euler(0f, 0f, 0f);
             driver.enabled = true;
+            raycast.SetActive(true);
         }
     }
 }
