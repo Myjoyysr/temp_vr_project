@@ -17,10 +17,12 @@ public class MoveWithHandTwo : MonoBehaviour
     private Vector3 rotation;
     private bool trigger;
 
+    private float startTime;
+
     // Start is called before the first frame update
     void Start()
     {
-    
+        startTime = 0;
     }
 
     // Update is called once per frame
@@ -29,21 +31,34 @@ public class MoveWithHandTwo : MonoBehaviour
         InputDevice rightHand = InputDevices.GetDeviceAtXRNode(control);
         rightHand.TryGetFeatureValue(CommonUsages.triggerButton, out trigger);
 
-        Debug.Log(trigger);
-        Debug.Log(inputAxis);
+        //Debug.Log(trigger);
+        //Debug.Log(inputAxis);
 
-        if (trigger) {
-            inputAxis = hand.transform.position;
-            rotation = hand.transform.eulerAngles;
+        if (trigger)
+        {
+            if (startTime == 0)
+            {
+                startTime = Time.time;
+            }
+            //Debug.Log(startTime);
 
-            driver.enabled = false;
-            raycast.SetActive(false);
 
-            transform.eulerAngles = new Vector3(rotation.x, rotation.y, rotation.z);
-            transform.position = new Vector3(inputAxis.x, inputAxis.y, inputAxis.z);
+            if (trigger && (Time.time - startTime > 0.3f))
+            {
+                inputAxis = hand.transform.position;
+                rotation = hand.transform.eulerAngles;
+
+                driver.enabled = false;
+                raycast.SetActive(false);
+
+                transform.eulerAngles = new Vector3(rotation.x, rotation.y, rotation.z);
+                transform.position = new Vector3(inputAxis.x, inputAxis.y, inputAxis.z);
+            }
         }
 
-        else {
+        else
+        {
+            startTime = 0;
             transform.localPosition = new Vector3(0f, 0f, 0f);
             transform.localRotation = Quaternion.Euler(0f, 0f, 0f);
             driver.enabled = true;
@@ -51,3 +66,4 @@ public class MoveWithHandTwo : MonoBehaviour
         }
     }
 }
+
