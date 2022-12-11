@@ -2133,8 +2133,15 @@ MonoBehaviour:
     HEIGHT VALUE:
     Left controller joystick
 
+    BALL: Right controller grab
 
-    Enter the teleport to get back to main menu'
+
+    Warning! Height
+    value sensitivity and limit are high so be careful with right controller joystick.
+
+
+    Enter
+    the teleport to get back to main menu'
 --- !u!114 &463652392
 MonoBehaviour:
   m_ObjectHideFlags: 0

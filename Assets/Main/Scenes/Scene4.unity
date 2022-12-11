@@ -7084,8 +7084,15 @@ MonoBehaviour:
     IPD VALUE:
     Left controller joystick
 
+    BALL: Right controller grab
 
-    Enter the teleport to get back to main menu'
+
+    Warning! May
+    cause discomft. Please use left controller joystick carefully
+
+
+    Enter the
+    teleport to get back to main menu'
 --- !u!114 &1824270563
 MonoBehaviour:
   m_ObjectHideFlags: 0

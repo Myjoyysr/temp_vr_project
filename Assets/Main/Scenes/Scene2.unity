@@ -3943,11 +3943,18 @@ MonoBehaviour:
 
     TELEPORT: Right controller trigger
 
-    MOVE:
-    Left controller joystick
+    EYE
+    TILTING: Left controller joystick
+
+    BALL: Right controller grab
 
 
-    Enter the teleport to get back to main menu'
+    Warning!
+    May cause discomfort. Please adjust tilt carefully or close your right eye.
+
+
+    Enter
+    the teleport to get back to main menu'
 --- !u!114 &621298695
 MonoBehaviour:
   m_ObjectHideFlags: 0
