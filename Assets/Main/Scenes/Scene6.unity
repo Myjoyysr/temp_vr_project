@@ -1563,6 +1563,64 @@ Transform:
   m_Father: {fileID: 4015128326507454648}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &700915559
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 700915562}
+  - component: {fileID: 700915561}
+  - component: {fileID: 700915560}
+  m_Layer: 0
+  m_Name: resetzone
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &700915560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 700915559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 742b3ccaf9f21cc4db34b2116309d623, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &700915561
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 700915559}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 22, y: 0.5, z: 22}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &700915562
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 700915559}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 69.71, y: 4.4, z: 77.329}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &707415893
 GameObject:
   m_ObjectHideFlags: 0
@@ -3155,7 +3213,7 @@ MonoBehaviour:
   item: {fileID: 3368280931326716176, guid: 4ea129a90d8dd25499a424a41b411a05, type: 3}
   throwCooldown: 0.4
   keypress: 32
-  throwForce: 43
+  throwForce: 27
   throwUpwardForce: 3
   rightGrab:
     m_UseReference: 1
