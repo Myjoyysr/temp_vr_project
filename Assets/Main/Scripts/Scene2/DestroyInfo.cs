@@ -16,7 +16,7 @@ public class DestroyInfo : MonoBehaviour
     {
         Debug.Log("kek");
         if (other.tag == "Player"){
-            Destroy (GameObject.Find ("Info 0"));
+            Destroy (GameObject.Find("Info 0"));
         }
     }
 }
