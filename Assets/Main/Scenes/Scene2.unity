@@ -1141,7 +1141,7 @@ GameObject:
   - component: {fileID: 415564884}
   m_Layer: 0
   m_Name: LeftEye
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2850,7 +2850,7 @@ GameObject:
   - component: {fileID: 811967465}
   m_Layer: 0
   m_Name: RightHand Controller
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3799,7 +3799,7 @@ GameObject:
   - component: {fileID: 926286618}
   m_Layer: 0
   m_Name: Camera Offset
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4033,7 +4033,7 @@ GameObject:
   - component: {fileID: 1068117754}
   m_Layer: 0
   m_Name: Right Teleportation Ray
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5030,7 +5030,7 @@ GameObject:
   - component: {fileID: 1151266799}
   m_Layer: 0
   m_Name: LeftHand Controller
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6383,7 +6383,7 @@ GameObject:
   - component: {fileID: 1526386065}
   m_Layer: 0
   m_Name: RightEye
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

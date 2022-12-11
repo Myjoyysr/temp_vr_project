@@ -11,6 +11,8 @@ TagManager:
   - Box5
   - HeadCollider
   - ControllerCollider
+  - target
+  - ball
   layers:
   - Default
   - TransparentFX
