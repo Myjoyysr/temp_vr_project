@@ -6,15 +6,14 @@ public class DestroyInfo : MonoBehaviour
 {
     void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Player ENter");
+        Debug.Log("Collision");
         if (other.tag == "Player"){
-
             Debug.Log("Player ENter");
         }
     }
     void OnTriggerExit(Collider other)
     {
-        Debug.Log("kek");
+        Debug.Log("Exit COLLISION");
         if (other.tag == "Player"){
             Destroy (GameObject.Find("Info 0"));
         }
