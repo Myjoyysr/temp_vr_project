@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR;
 using UnityEngine.XR.Interaction.Toolkit;
+using UnityEngine.SpatialTracking;
 
 public class MoveWithHandTwo : MonoBehaviour
 {
     public XRNode control;
     public Camera mainCamera;
     public GameObject hand;
+    public TrackedPoseDriver driver;
 
     private Vector3 inputAxis;
     private Vector3 cameraPosition;
@@ -19,7 +21,7 @@ public class MoveWithHandTwo : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        driver.enabled = true;
     }
 
     // Update is called once per frame
@@ -38,15 +40,16 @@ public class MoveWithHandTwo : MonoBehaviour
             cameraPosition = mainCamera.transform.localPosition;
             cameraRotation = mainCamera.transform.eulerAngles;
 
-            //transform.position = new Vector3((inputAxis.x - cameraPosition.x), (inputAxis.y - cameraPosition.y), (inputAxis.z - cameraPosition.z));
+            driver.enabled = false;
+
             transform.eulerAngles = new Vector3(rotation.x, rotation.y, rotation.z);
-            transform.position = new Vector3(inputAxis.x, (inputAxis.y - 1.25f), inputAxis.z);
-            //transform.eulerAngles = new Vector3((rotation.x - cameraRotation.x), (rotation.y - cameraRotation.y), (rotation.z - cameraRotation.z));
+            transform.position = new Vector3(inputAxis.x, inputAxis.y, inputAxis.z);
         }
 
         else {
             transform.localPosition = new Vector3(0f, 0f, 0f);
             transform.localRotation = Quaternion.Euler(0f, 0f, 0f);
+            driver.enabled = true;
         }
     }
 }
