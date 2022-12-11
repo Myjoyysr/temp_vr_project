@@ -15,11 +15,14 @@ public class Target : MonoBehaviour
         hit = false;
      }
 
+
+
     void OnTriggerEnter(Collider other)
     {
-
+        //Debug.Log("hit");
+        //Debug.Log(hit);
         if (hit == false){
-            target.GetComponent<MeshRenderer> ().material = material1;
+            target.GetComponent<MeshRenderer> ().material = material2;
             hit = true;
         }
         else{
