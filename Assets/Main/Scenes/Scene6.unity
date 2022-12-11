@@ -9749,7 +9749,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   control: 5
-  mainCamera: {fileID: 9014170784778268642}
+  raycast: {fileID: 2591975829786972510}
   hand: {fileID: 9014170784883707749}
   driver: {fileID: 9014170784778268649}
 --- !u!114 &9014170784778268649
